@@ -4,12 +4,15 @@ import capitalize from '../src/capitalize.js';
 
 assert(capitalize('') === '');
 assert(capitalize('hello') === 'Hello');
-// if (capitalize('hello') !== 'Hello') {
-//   throw new Error('Функция работает неверно!');
-// }
+// ниже тесты с ручными утвердлениями
+/*
+if (capitalize('hello') !== 'Hello') {
+  throw new Error('Функция работает неверно!');
+}
 
-// if (capitalize('') !== '') {
-//   throw new Error('Функция работает неверно!');
-// }
+if (capitalize('') !== '') {
+  throw new Error('Функция работает неверно!');
+}
 
-// console.log('Все тесты пройдены!');
+console.log('Все тесты пройдены!');
+*/

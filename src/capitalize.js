@@ -1,5 +1,8 @@
-export const capitalize = (text) => {
-    const firstChar = text[0].toUpperCase();
-    const restSubstring = text.slice(1);
-    return `${firstChar}${restSubstring}`;
-};
+const capitalize = (text) => {
+    if (text === '') {
+        return '';
+    };
+    const [firstChar, ...restChars] = text;
+    return `${firstChar.toUpperCase()}${restChars.join('')}`;
+  };
+export default capitalize;
